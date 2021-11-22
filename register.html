@@ -10,8 +10,12 @@
   <body>
     <h2>FORM INPUT WAVE</h2>
     <div class="container">
-      <h1>Please Login</h1>
+      <h1>Please Register</h1>
       <form action="#">
+        <div class="form-control">
+          <input type="text" required />
+          <label for="name">Name</label>
+        </div>
         <div class="form-control">
           <input type="text" required />
           <label for="email">Email</label>
@@ -20,10 +24,12 @@
           <input type="password" required />
           <label for="password">Password</label>
         </div>
-        <button class="btn">Login</button>
-        <p class="text">
-          Don't have an account?<a href="register.html"> Register</a>
-        </p>
+        <div class="form-control">
+          <input type="password" required />
+          <label for="password"> Confirm Password</label>
+        </div>
+        <button class="btn">Register</button>
+        <p class="text">Have an account?<a href="index.html"> Login</a></p>
       </form>
     </div>
     <script src="main.js"></script>
